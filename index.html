@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <h1>Flash Cards</h1>
+      <div>
+        <button onclick="showCreateCardBox()">New Card +</button>
+        <button onclick="delFlashCards()">Delete Cards -</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="create-box">
+      <h2>Create Flash Card</h2>
+      <hr>
+      <label for="question">Question :</label>
+      <textarea id="question"></textarea>
+      <br>
+      <label for="answer">Answer :</label>
+      <textarea id="answer"></textarea>
+    </div>
+
+    <div>
+      <button id="saveMe" onclick="addFlashCard()">Save</button>
+      <button id="closeMe" onclick="hideCreateBox()">Close</button>
+    </div>
+  </div>
+
+  <h1 id="intro">Your Flash Cards Will apear here 😉</h1>
+  <div class="flashCards">
+
+  </div>
+  <div id="et">
+    <div id="errorThrow">
+      <h1>Please Put the Answer and Question values properly 🥸</h1>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
